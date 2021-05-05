@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta
+			property="og:image"
+			content="https://raw.githubusercontent.com/stefank-29/Portfolio-Website/master/portfolio-website.png"
+		/> -->
+
+		<title>Tristan Ngo - Personal website</title>
+
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/headerBg.css" />
+		<link rel="stylesheet" href="./css/scrollDownIcon.css" />
+		<link rel="stylesheet" href="./css/particles.css" />
+		<link rel="stylesheet" href="./css/about.css" />
+		<link rel="stylesheet" href="./css/projects.css" />
+		<link rel="stylesheet" href="./css/contact.css" />
+		<link rel="stylesheet" href="./css/menu.css" />
+
+		<link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="menu hide">
+					<div id="bars"><i class="fas fa-bars"></i></div>
+					<h1 class="header">Tristan Ngo</h1>
+					<ul>
+						<a href="#large-header"><li>Home</li></a>
+						<a href="#about"><li>About</li></a>
+						<a href="#projects"><li>Projects</li></a>
+						<a href="#contact"><li>Contact</li></a>
+
+						<a href="https://github.com/TristanNgo" target="_blank"
+							><li>Source code</li></a
+						>
+					</ul>
+					<p>Dark Mode</p>
+					<div>
+						<input type="checkbox" class="checkbox" id="checkbox" />
+						<label for="checkbox" class="label">
+							<i class="fas fa-sun"></i>
+							<i class="fas fa-moon"></i>
+							<div class="ball"></div>
+						</label>
+					</div>
+					<p id="menu-logos">
+						<a href="https://github.com/TristanNgo" target="_blank"
+							><i class="fab fa-github logo"></i
+						></a>
+						<a href="https://www.linkedin.com/in/tin-ngo-12755b166/" target="_blank"
+							><i class="fab fa-linkedin logo"></i
+						></a>
+						<a href="https://www.facebook.com/tristanngo2002" target="_blank"
+							><i class="fab fa-facebook logo"></i
+						></a>
+					</p>
+				</div>
+
+				<!----------- header -------------->
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<h1 class="main-title">
+						<p>Hello, I'm <span id="name">Ngo Trung Tin</span>.</p>
+						<p>I'm a Frontend web developer.</p>
+						<button id="headerBtn">
+							View my work <i id="arrow" class="fas fa-arrow-right"></i>
+						</button>
+					</h1>
+					<div id="scroll"><span></span><span></span><span></span></div>
+				</div>
+				<!-- site-content -->
+				<div id="site-content">
+					<div id="particles-js"></div>
+
+					<!----------- about ---------------->
+					<div id="about">
+						<h2
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="section-header"
+						>
+							ABOUT ME
+						</h2>
+						<p
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="dots"
+						>
+							<i class="fas fa-circle"></i><i class="fas fa-circle"></i
+							><i class="fas fa-circle"></i>
+						</p>
+						<!-- <h3 class="sub-header">Myself</h3> -->
+						<div
+							data-aos="flip-left"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							id="image-div"
+						>
+							<img id="my-image" src="./images/my-image.jpg" alt="my image" />
+						</div>
+						<p
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-once="true"
+							data-aos-easing="ease-in-out"
+							class="about-p"
+						>
+							I'm very passionated about learning new language programming and
+							technologies . I always concentrated and be patient until completing
+							assigned tasks. My target is become an Software Engineer so far, in the
+							next 3 years.You can find me on
+							<a href="https://github.com/TristanNgo" target="_blank"
+								><i class="fab fa-github logo"></i></a
+							>,
+							<a href="https://www.linkedin.com/in/tin-ngo-12755b166/" target="_blank"
+								><i class="fab fa-linkedin logo"></i
+							></a>
+							or on
+							<a href="https://www.facebook.com/tristanngo2002" target="_blank"
+								><i class="fab fa-facebook logo"></i
+							></a>
+							.
+						</p>
+						<!-- <h3
+							data-aos="fade-left"
+							data-aos-duration="850"
+							data-aos-once="true"
+							data-aos-easing="ease-in-out"
+							class="sub-header"
+						>
+							Skill
+						</h3> -->
+						<section id="skills" class="section scrollspy">
+							<div class="skills__container container">
+								<h1
+									class="section__title animate__animated animate__fadeInUp delay-10 wow"
+								>
+									<span>My</span>
+									<span>Skills</span>
+								</h1>
+								<div class="row">
+									<div class="col-s12">
+										<ul class="hide-on-med-and-down skills__lg">
+											<li
+												class="animate__animated animate__fadeInRight delay-2 wow"
+											>
+												<span class="skills__unit">
+													<i class="fa fa-circle"></i> HTML/CSS</span
+												>
+												<span class="skills__item delay-1">
+													<img
+														src="./assets/img/SVG/html5.svg"
+														alt="skills-logo"
+													/>
+													<svg></svg>
+												</span>
+												<span class="skills__item delay-2">
+													<img
+														src="./assets/img/SVG/css-3.svg"
+														alt="skills-logo"
+													/>
+												</span>
+												<span class="skills__item delay-3">
+													<img
+														src="./assets/img/SVG/bootstrap-4.svg"
+														alt="skills-logo"
+													/>
+												</span>
+												<span class="skills__item delay-5">
+													<img
+														src="./assets/img/SVG/sass-1.svg"
+														alt="skills-logo"
+													/>
+												</span>
+												<span class="skills__item skills__text delay-6">
+													Responsive
+												</span>
+											</li>
+											<li
+												class="animate__animated animate__fadeInRight delay-4 wow"
+											>
+												<span class="skills__unit"
+													><i class="fa fa-circle"></i> Javascript</span
+												>
+												<span class="skills__item skills__text delay-1">
+													ES5/ES6
+												</span>
+												<span class="skills__item skills__text delay-5">
+													AXIOS
+												</span>
+											</li>
+											<li
+												class="animate__animated animate__fadeInRight delay-6 wow"
+											>
+												<span class="skills__unit"
+													><i class="fa fa-circle"></i>Library</span
+												>
+												<span class="skills__item skills__text delay-1">
+													React Js
+												</span>
+												<span class="skills__item skills__text delay-2">
+													React Router
+												</span>
+												<span class="skills__item skills__text delay-3">
+													Redux
+												</span>
+												<span class="skills__item skills__text delay-4">
+													React Hooks
+												</span>
+												<span class="skills__item skills__text delay-4">
+													Material UI
+												</span>
+											</li>
+											<li
+												class="animate__animated animate__fadeInRight delay-10 wow"
+											>
+												<span class="skills__unit"
+													><i class="fa fa-circle"></i> Git</span
+												>
+												<span class="skills__item skills__text">
+													Git basic
+												</span>
+											</li>
+											<li
+												class="animate__animated animate__fadeInRight delay-14 wow"
+											>
+												<span class="skills__unit"
+													><i class="fa fa-circle"></i> Soft skills</span
+												>
+												<span class="skills__item skills__text delay-1">
+													Teamwork
+												</span>
+												<span class="skills__item skills__text delay-2">
+													Self study
+												</span>
+											</li>
+											<li
+												class="animate__animated animate__fadeInRight delay-16 wow"
+											>
+												<span class="skills__unit"
+													><i class="fa fa-circle"></i> Languages</span
+												>
+												<span
+													class="skills__item skills__text skills__item--long delay-1"
+												>
+													English
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<h3
+							data-aos="fade-left"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="sub-header"
+						>
+							Education <i class="fa fa-graduation-cap"></i>
+						</h3>
+						<p
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="about-p"
+						>
+							- 2014-2017: Branch of physics student at Le Quy Don gifted highschool
+						</p>
+						<p
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="about-p"
+						>
+							- 2017-2021: IT student at Hutech University
+						</p>
+						<p
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="about-p"
+						>
+							- 2020-2021 : Study advanced-training Frontend Course at Cybersoft
+							Education Center
+						</p>
+					</div>
+					<!-- PROJECTS -->
+					<div id="projects">
+						<h2
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="section-header"
+						>
+							PROJECTS
+						</h2>
+						<p
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="dots"
+						>
+							<i class="fas fa-circle"></i><i class="fas fa-circle"></i
+							><i class="fas fa-circle"></i>
+						</p>
+						<div
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+						>
+							<p id="about-projects">
+								These are some of my projects, you can find all of them on my
+								<a href="https://github.com/TristanNgo" target="_blank"
+									><i class="fab fa-github logo"></i
+								></a>
+							</p>
+						</div>
+						<div
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="project"
+						>
+							<div class="project-image">
+								<a
+									class="image"
+									href="https://stefank-29.github.io/To-Do-List/"
+									target="_blank"
+								>
+									<img src="./gifs/todo.png" alt="todo screenshot"
+								/></a>
+							</div>
+							<div class="project-desc">
+								<h2 class="header">To Do list</h2>
+								<p class="about">
+									- Description: A small To-do-list app will help user manage
+									their task, we can add task, change status of tasks, delete
+									task.
+								</p>
+								<p class="about">- Responsibility: Development</p>
+								<p class="about">
+									- Technologies: Html, Css, JavaScript, Axios, Restful Api...
+								</p>
+								<div class="links">
+									<a
+										href="https://to-do-list-tristan202.netlify.app/"
+										target="_blank"
+										><button>Visit website</button></a
+									>
+									<a
+										href="https://github.com/TristanNgo/To-do-List"
+										target="_blank"
+										><button>
+											<i id="logo" class="fab fa-github"></i> &nbsp;View
+											source code
+										</button></a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="fade-left"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="project"
+						>
+							<div class="project-image">
+								<a
+									class="image"
+									href="https://netflix-aa9ec.web.app/"
+									target="_blank"
+								>
+									<img src="./gifs/netflix.png" alt="netflix screenshot"
+								/></a>
+							</div>
+							<div class="project-desc">
+								<h2 class="header">Netflix Clone</h2>
+								<p class="about">
+									- Description: A clone Netflix Website and data from Firebase
+									with full Responsive. Sign in, Sign up and Search are features
+								</p>
+								<p class="about">- Responsibility: Development</p>
+								<p class="about">
+									- Technologies: ReactJS, Hook, Route, Redux, Html, Css,
+									JavaScript Responsive...
+								</p>
+								<div class="links">
+									<a href="https://netflix-aa9ec.web.app/" target="_blank"
+										><button>Visit website</button></a
+									>
+									<a href="https://github.com/TristanNgo/Netflix" target="_blank"
+										><button>
+											<i id="logo" class="fab fa-github"></i> &nbsp;View
+											source code
+										</button></a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="project"
+						>
+							<div class="project-image">
+								<a
+									class="image"
+									href="https://github.com/TristanNgo/Fashion"
+									target="_blank"
+								>
+									<img src="./gifs/Fashion.png" alt="Fashion screenshot"
+								/></a>
+							</div>
+							<div class="project-desc">
+								<h2 class="header">Fashion Website</h2>
+								<p class="about">
+									- Description: Fashion Website with some animation that without
+									Framwork
+								</p>
+								<p class="about">- Responsibility: Development</p>
+								<p class="about">
+									- Technologies: Html5, css3, Javascript, Jquery, Responsive
+								</p>
+								<div class="links">
+									<a href="https://tristan-fashion.netlify.app/" target="_blank"
+										><button>Visit website</button></a
+									>
+									<a href="https://github.com/TristanNgo/Fashion" target="_blank"
+										><button>
+											<i id="logo" class="fab fa-github"></i> &nbsp;View
+											source code
+										</button></a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="fade-left"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="project"
+						>
+							<div class="project-image">
+								<a
+									class="image"
+									href="https://tristan-management.netlify.app/"
+									target="_blank"
+								>
+									<img src="./gifs/QLNV.png" alt="QLNV screenshot"
+								/></a>
+							</div>
+							<div class="project-desc">
+								<h2 class="header">Staff Management</h2>
+								<p class="about">
+									- Description: Staff Management app will help user easy to
+									manage staffs in the company, we can add new staff, edit infor
+									of them or delete in some cases.
+								</p>
+								<p class="about">- Responsibility: Development</p>
+								<p class="about">
+									- Technologies: Bootstrap4, Html5, Css3, JavaScript
+								</p>
+								<div class="links">
+									<a
+										href="https://tristan-management.netlify.app/"
+										target="_blank"
+										><button>Visit website</button></a
+									>
+									<a
+										href="https://github.com/TristanNgo/Staff-Management"
+										target="_blank"
+										><button>
+											<i id="logo" class="fab fa-github"></i> &nbsp;View
+											source code
+										</button></a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="project"
+						>
+							<div class="project-image">
+								<a class="image" href="#" target="_blank">
+									<img
+										src="./gifs/booking-ticket.png"
+										alt="booking-ticket screenshot"
+								/></a>
+							</div>
+							<div class="project-desc">
+								<h2 class="header">Booking-Ticket App(COMING SOON)</h2>
+								<p class="about">
+									- Description: A website allow user book tickets movie.
+								</p>
+								<p class="about">- Responsibility: Development</p>
+								<p class="about">
+									- Technologies: ReactJS, Axios, RestfulAPI, Responsive, Material
+									UI, Bootstrap4, Html5, Css3, Redux, Route....
+								</p>
+								<div class="links">
+									<a href="#" target="_blank"><button>Visit website</button></a>
+									<a href="#" target="_blank"
+										><button>
+											<i id="logo" class="fab fa-github"></i> &nbsp;View
+											source code
+										</button></a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							data-aos="fade-left"
+							data-aos-duration="850"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="project"
+						>
+							<div class="project-image">
+								<a
+									class="image"
+									href="https://stefank-29.github.io/Library/"
+									target="_blank"
+								>
+									<img src="./gifs/library.png" alt="calculator screenshot"
+								/></a>
+							</div>
+							<div class="project-desc">
+								<h2 class="header">Library</h2>
+								<p class="about">
+									Library app to store books that you read or want to read<br />
+									<br />
+									Features: <br />
+									<i class="fas fa-circle list-dot"></i>
+									<strong>Add new book to library</strong> <br /><i
+										class="fas fa-circle list-dot"
+									></i>
+									<strong>Remove book</strong><br />
+									<i class="fas fa-circle list-dot"></i>
+									<strong>Toggle read status</strong> <br />
+									<i class="fas fa-circle list-dot"></i>
+									<strong>Sort books by name or read status </strong> <br />
+									<br />
+									Built with: JavaScript, CSS3, HTML5 & Git.
+								</p>
+								<div class="links">
+									<a href="https://stefank-29.github.io/Library/" target="_blank"
+										><button>Visit website</button></a
+									>
+									<a href="https://github.com/stefank-29/Library" target="_blank"
+										><button>
+											<i id="logo" class="fab fa-github"></i> &nbsp;View
+											source code
+										</button></a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- CONTACT -->
+					<div id="contact">
+						<h2
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="section-header"
+						>
+							CONTACT
+						</h2>
+
+						<p
+							data-aos="fade-in"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="dots"
+						>
+							<i class="fas fa-circle"></i><i class="fas fa-circle"></i
+							><i class="fas fa-circle"></i>
+						</p>
+						<div
+							data-aos="fade-right"
+							data-aos-duration="850"
+							data-aos-once="true"
+							data-aos-easing="ease-in-out"
+						>
+							<p class="about">
+								Have a question or want to work together? <br />
+								Feel free to contact me through any of the methods listed below.
+							</p>
+						</div>
+						<div
+							data-aos="fade-left"
+							data-aos-duration="850"
+							data-aos-once="true"
+							data-aos-easing="ease-in-out"
+						>
+							<p class="about">
+								Email:
+								<a href="mailto:ngotrust272@gmail.com">ngotrust272@gmail.com</a>
+							</p>
+						</div>
+						<div
+							data-aos="zoom-in"
+							data-aos-duration="850"
+							data-aos-once="true"
+							data-aos-easing="ease-in-out"
+						>
+							<p class="about logos">
+								<a href="https://github.com/TristanNgo" target="_blank"
+									><i class="fab fa-github logo"></i
+								></a>
+								<a
+									href="https://www.linkedin.com/in/tin-ngo-12755b166/"
+									target="_blank"
+									><i class="fab fa-linkedin logo"></i
+								></a>
+								<a href="https://www.facebook.com/tristanngo2002" target="_blank"
+									><i class="fab fa-facebook logo"></i
+								></a>
+							</p>
+						</div>
+						<div
+							data-aos="fade-up"
+							data-aos-duration="850"
+							data-aos-once="true"
+							data-aos-easing="ease-in-out"
+						>
+							<p class="about">You can also leave me a message here:</p>
+						</div>
+						<!-- form -->
+						<form
+							data-aos="fade-up"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-out"
+							data-aos-once="true"
+							class="form"
+							autocomplete="off"
+						>
+							<div class="inputDiv">
+								<label for="name">Name <sub class="star">*</sub></label>
+								<input type="text" name="name" id="input-name" placeholder="Name" />
+								<span class="status"><i class="far fa-check-circle"></i></span>
+								<p class="error">Error message</p>
+							</div>
+							<div class="inputDiv">
+								<label for="email">Email <sub class="star">*</sub></label>
+								<input
+									type="text"
+									name="email"
+									id="input-email"
+									placeholder="Email Address"
+								/>
+								<span class="status"><i class="far fa-check-circle"></i></span>
+								<p class="error">Error message</p>
+							</div>
+							<div class="inputDiv" id="message">
+								<label for="message">Message <sub class="star">*</sub></label>
+								<textarea
+									name="message"
+									id="input-message"
+									cols="30"
+									rows="7"
+									placeholder="Message"
+								></textarea>
+								<span class="status"><i class="far fa-check-circle"></i></span>
+								<p class="error">Error message</p>
+							</div>
+
+							<input type="submit" name="submit" value="Submit" id="submit-btn" />
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div>
+					<a href="#large-header"
+						><div id="footer-arrows"><i class="fas fa-angle-double-up"></i></div
+					></a>
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					&nbsp;&nbsp;All Right Reserved | <i class="fab fa-github"></i>
+					<a href="https://github.com/TristanNgo" target="_blank">TristanNgo</a>
+				</div>
+			</footer>
+		</div>
+		<script
+			type="text/javascript"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"
+		></script>
+
+		<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+		<script src="app.bundle.js"></script>
+		<script src="particles.bundle.js"></script>
+	</body>
+</html>

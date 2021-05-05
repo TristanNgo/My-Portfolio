@@ -1,0 +1,142 @@
+#projects {
+	position: relative;
+	overflow: hidden;
+	width: 70%;
+	min-height: 100vh;
+	margin: 3rem auto 0;
+}
+
+#about-projects {
+	width: 90%;
+	margin: 2rem auto 4rem;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	color: #ecf4f5;
+	line-height: 3rem;
+	transition: color 0.5s ease-in-out;
+}
+
+#about-projects.light {
+	color: #232323;
+}
+
+/************project*************/
+
+.project {
+	min-height: 30rem;
+	width: 100%;
+	margin: 1rem auto 4rem;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #44bcccaa;
+	border-radius: 5px;
+}
+
+/************image*************/
+
+.project-image {
+	position: relative;
+	min-height: 25rem;
+	margin: 3rem auto;
+	/***za maksimalnu visinu***/
+	width: 33%;
+	min-width: 50rem;
+	/* background-color: rgb(214, 127, 156); */
+	display: flex;
+}
+
+.project-image .image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30rem;
+	width: 100%;
+}
+
+.project-image .image img {
+	width: 100%;
+	height: 100%;
+}
+
+/********describtion**************/
+
+.project-desc {
+	min-height: inherit;
+	width: 60%;
+	/* background-color: rgb(74, 160, 182); */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: 6rem;
+}
+
+.project-desc .header {
+	font-size: 2.7rem;
+	font-family: 'Alata', sans-serif;
+	color: #ecf4f5;
+	margin: 0 1rem;
+	padding: 0rem 0rem 0.2rem;
+	border-bottom: 2px solid #ecf4f5;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-desc .header.light {
+	color: #232323;
+	border-bottom: 2px solid #232323;
+}
+
+.project-desc .about {
+	width: 100%;
+	margin: 2rem 0rem;
+	padding: 0 1rem;
+	font-size: 1.7rem;
+	font-family: 'Raleway', sans-serif;
+	color: #ecf4f5;
+	transition: color 0.5s ease-in-out;
+}
+
+.project-desc .about.light {
+	color: #232323;
+}
+
+.list-dot {
+	font-size: 1.5rem;
+}
+
+/*******buttons********/
+
+.links {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0.5rem 1rem;
+}
+
+.links button {
+	padding: 1rem 1.5rem;
+	margin-right: 2rem;
+	font-size: 1.7rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #44bccc;
+	background-color: rgba(22, 22, 240, 0.1);
+	border: 1px solid #44bccc;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.links button:hover {
+	color: #ecf4f5;
+	background-color: #44bccc;
+	border: 1px solid #44bccc;
+}
+
+.links #logo {
+	font-size: 2rem;
+}

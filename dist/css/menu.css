@@ -1,0 +1,144 @@
+.menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 22rem;
+	background-color: #0e0f18;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-family: 'Raleway', sans-serif;
+	padding: 2rem 2rem;
+	transition: transform 0.3s linear;
+}
+
+.menu.hide {
+	transform: translateX(22rem);
+}
+
+.menu .header {
+	color: #10bb52;
+	font-size: 2.1rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+}
+
+.menu ul li {
+	padding: 1.2rem 0rem;
+	width: 100%;
+	cursor: pointer;
+}
+
+.menu ul a {
+	color: #ecf4f5;
+	text-decoration: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.menu ul a:hover {
+	color: #10a824;
+}
+
+.menu p {
+	color: #ecf4f5;
+	font-size: 1.5rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+/*******toggle*******/
+
+.label {
+	position: relative;
+	padding: 0.5rem;
+	width: 5rem;
+	height: 2.6rem;
+	background-color: whitesmoke;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	align-self: center;
+}
+
+.checkbox {
+	display: none;
+}
+
+.ball {
+	position: absolute;
+	width: 2.2rem;
+	height: 2.2rem;
+	top: 2px;
+	left: 2px;
+	background-color: rgb(32, 25, 25);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(2.4rem);
+	background-color: rgb(161, 218, 218);
+}
+
+.fa-moon {
+	color: #f1c40f;
+	margin-right: 0.3rem;
+	font-size: 1.2rem;
+}
+
+.fa-sun {
+	color: #f39c12;
+	margin-left: 0.3rem;
+	font-size: 1.2rem;
+}
+
+/*********bars********/
+
+#bars {
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	top: 2rem;
+	left: -6rem;
+	background-color: #222d77aa;
+	font-size: 1.7rem;
+	color: #ecf4f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+/********logos********/
+
+#menu-logos {
+	margin-top: 3rem;
+	width: 100%;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+}
+
+#menu-logos i {
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: #ecf4f5;
+}
+
+#menu-logos i:hover {
+	color: #44bccccc;
+}

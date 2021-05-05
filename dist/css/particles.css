@@ -1,0 +1,23 @@
+canvas {
+	display: block;
+	/* vertical-align: bottom; */
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: calc(530vh + 3.7rem);
+	/* podesiti koliko treba da bude minimalna visina*/
+	background-color: #171a2e;
+	/* background-color: #ece8e6; */
+	/* background-color: #232741; */
+	/* background-color: #171a2e; ovo je pozadina */
+	transition: background 0.5s ease-in-out;
+}
+
+#particles-js.light {
+	/* background-color: rgb(238, 229, 229); */
+	background-color: rgb(243, 243, 243);
+}
